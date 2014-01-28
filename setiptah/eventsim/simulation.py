@@ -78,7 +78,7 @@ class Simulation(object) :
         self.time = 0.
         
     def schedule(self, callback, delay=0. ) :
-        self.eventq.schedule( callback, delay )
+        return self.eventq.schedule( callback, delay )
         
     def get_time(self) :
         return self.time
